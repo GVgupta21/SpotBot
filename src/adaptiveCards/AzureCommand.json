@@ -1,0 +1,98 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.4",
+    "body": [
+      {
+        "type": "TextBlock",
+        "text": "Enter Configuration Details",
+        "weight": "Bolder",
+        "size": "Medium"
+      },
+      {
+        "type": "Input.Text",
+        "id": "ratio",
+        "placeholder": "Enter Ratio",
+        "label": "Ratio",
+        "isRequired": true
+      },
+      {
+        "type": "Input.ChoiceSet",
+        "id": "location",
+        "placeholder": "Select a location",
+        "label":"Location",
+        "choices": [
+            { "title": "East US", "value": "eastus" },
+            { "title": "East US 2", "value": "eastus2" },
+            { "title": "West US", "value": "westus" },
+            { "title": "Central US", "value": "centralus" },
+            { "title": "North Central US", "value": "northcentralus" },
+            { "title": "South Central US", "value": "southcentralus" },
+            { "title": "North Europe", "value": "northeurope" },
+            { "title": "West Europe", "value": "westeurope" },
+            { "title": "East Asia", "value": "eastasia" },
+            { "title": "Southeast Asia", "value": "southeastasia" },
+            { "title": "Japan East", "value": "japaneast" },
+            { "title": "Japan West", "value": "japanwest" },
+            { "title": "Australia East", "value": "australiaeast" },
+            { "title": "Australia Southeast", "value": "australiasoutheast" },
+            { "title": "Australia Central", "value": "australiacentral" },
+            { "title": "Brazil South", "value": "brazilsouth" },
+            { "title": "South India", "value": "southindia" },
+            { "title": "Central India", "value": "centralindia" },
+            { "title": "West India", "value": "westindia" },
+            { "title": "Canada Central", "value": "canadacentral" },
+            { "title": "Canada East", "value": "canadaeast" },
+            { "title": "West US 2", "value": "westus2" },
+            { "title": "West Central US", "value": "westcentralus" },
+            { "title": "UK South", "value": "uksouth" },
+            { "title": "UK West", "value": "ukwest" },
+            { "title": "Korea Central", "value": "koreacentral" },
+            { "title": "Korea South", "value": "koreasouth" },
+            { "title": "France Central", "value": "francecentral" },
+            { "title": "South Africa North", "value": "southafricanorth" },
+            { "title": "UAE North", "value": "uaenorth" },
+            { "title": "Switzerland North", "value": "switzerlandnorth" },
+            { "title": "Germany West Central", "value": "germanywestcentral" },
+            { "title": "Norway East", "value": "norwayeast" },
+            { "title": "Jio India West", "value": "jioindiawest" },
+            { "title": "West US 3", "value": "westus3" },
+            { "title": "Sweden Central", "value": "swedencentral" },
+            { "title": "Qatar Central", "value": "qatarcentral" },
+            { "title": "Poland Central", "value": "polandcentral" }
+          ],
+        "isRequired": true,
+        "errorMessage": "Please select a location."
+      },
+      {
+        "type": "Input.Text",
+        "id": "exactCPU",
+        "placeholder": "Enter Exact CPU Required",
+        "label": "Exact CPU"
+      },
+      {
+        "type": "Input.Text",
+        "id": "minCPU",
+        "placeholder": "Enter Min CPU",
+        "label": "Min CPU"
+      },
+      {
+        "type": "Input.Text",
+        "id": "minMemory",
+        "placeholder": "Enter Min Memory",
+        "label": "Min Memory"
+      }
+    ]
+    ,
+    "actions": [
+      {
+        "type": "Action.Submit",
+        "title": "Submit",
+        "data": {
+          "action": "submit"
+        }
+      }
+    ]
+}
+
+  

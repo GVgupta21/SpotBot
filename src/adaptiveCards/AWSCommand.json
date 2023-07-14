@@ -1,0 +1,150 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.4",
+    "body": [
+      {
+        "type": "TextBlock",
+        "text": "Enter Configuration Details",
+        "weight": "Bolder",
+        "size": "Medium"
+      },
+      {
+        "type": "Input.Text",
+        "id": "ratio",
+        "placeholder": "Enter Ratio",
+        "label": "Ratio",
+        "isRequired": true
+      },
+      {
+        "type": "Input.ChoiceSet",
+        "id": "location",
+        "placeholder": "Select a location",
+        "label":"Location",
+        "choices": [
+          {
+            "title": "ap-northeast-1",
+            "value": "ap-northeast-1"
+          },
+          {
+            "title": "ap-northeast-2",
+            "value": "ap-northeast-2"
+          },
+          {
+            "title": "ap-northeast-3",
+            "value": "ap-northeast-3"
+          },
+          {
+            "title": "ap-south-1",
+            "value": "ap-south-1"
+          },
+          {
+            "title": "ap-southeast-1",
+            "value": "ap-southeast-1"
+          },
+          {
+            "title": "ap-southeast-2",
+            "value": "ap-southeast-2"
+          },
+          {
+            "title": "ap-southeast-3",
+            "value": "ap-southeast-3"
+          },
+          {
+            "title": "ca-central-1",
+            "value": "ca-central-1"
+          },
+          {
+            "title": "eu-central-1",
+            "value": "eu-central-1"
+          },
+          {
+            "title": "eu-north-1",
+            "value": "eu-north-1"
+          },
+          {
+            "title": "eu-north-2",
+            "value": "eu-north-2"
+          },
+          {
+            "title": "eu-south-1",
+            "value": "eu-south-1"
+          },
+          {
+            "title": "eu-west-1",
+            "value": "eu-west-1"
+          },
+          {
+            "title": "eu-west-2",
+            "value": "eu-west-2"
+          },
+          {
+            "title": "eu-west-3",
+            "value": "eu-west-3"
+          },
+          {
+            "title": "me-south-1",
+            "value": "me-south-1"
+          },
+          {
+            "title": "sa-east-1",
+            "value": "sa-east-1"
+          },
+          {
+            "title": "us-east-1",
+            "value": "us-east-1"
+          },
+          {
+            "title": "us-east-2",
+            "value": "us-east-2"
+          },
+          {
+            "title": "us-gov-east-1",
+            "value": "us-gov-east-1"
+          },
+          {
+            "title": "us-gov-west-1",
+            "value": "us-gov-west-1"
+          },
+          {
+            "title": "us-west-1",
+            "value": "us-west-1"
+          },
+          {
+            "title": "us-west-2",
+            "value": "us-west-2"
+          }
+        ],
+        "isRequired": true,
+        "errorMessage": "Please select a location."
+      },
+      {
+        "type": "Input.Text",
+        "id": "exactCPU",
+        "placeholder": "Enter Exact CPU Required",
+        "label": "Exact CPU"
+      },
+      {
+        "type": "Input.Text",
+        "id": "minCPU",
+        "placeholder": "Enter Min CPU",
+        "label": "Min CPU"
+      },
+      {
+        "type": "Input.Text",
+        "id": "minMemory",
+        "placeholder": "Enter Min Memory",
+        "label": "Min Memory"
+      }
+    ],
+    "actions": [
+      {
+        "type": "Action.Submit",
+        "title": "Submit",
+        "data": {
+          "action": "submit"
+        }
+      }
+    ]
+  }
+  
